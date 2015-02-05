@@ -37,10 +37,10 @@ int countNum;
     
     if(countNum==11){
         [timer invalidate];
-        //   UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        //  UIViewController *viewController = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:@"secondViewController"];
+           UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+          UIViewController *viewController = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:@"secondViewController"];
         
-        // [self presentViewController:viewController animated:YES completion:nil];
+         [self presentViewController:viewController animated:YES completion:nil];
         
     }
     
