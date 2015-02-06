@@ -1,36 +1,28 @@
 //
-//  secondViewController.m
+//  otroViewController.m
 //  Lab04
 //
-//  Created by felipe on 05/02/15.
+//  Created by felipe on 06/02/15.
 //  Copyright (c) 2015 felipe. All rights reserved.
 //
 
-#import "secondViewController.h"
+#import "otroViewController.h"
 #import "celdaViewCell.h"
 #import "global.h"
-
 NSString *dateString;
-@interface secondViewController ()
+@interface otroViewController ()
 
 @end
 
-@implementation secondViewController
-          
-/*- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    return 0;
-}
+@implementation otroViewController
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 0;
-}*/
 - (void)viewDidLoad {
-
-    
-    [super viewDidLoad];
+    NSDate *currentDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"dd.MM.YY HH:mm:ss"];
+    dateString = [dateFormatter stringFromDate:currentDate];
     [array addObject:[[NSMutableArray alloc] initWithObjects:[[NSNumber numberWithInt:countClick ]stringValue],nil]];
-  //  [array addObject:[[NSMutableArray alloc] initWithObjects:@"uno",@"dos",nil]];
+    [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
@@ -38,6 +30,7 @@ NSString *dateString;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -55,19 +48,20 @@ NSString *dateString;
     NSLog(@"cellOaxaca");
     static NSString *CellIdentifier = @"celda";
     
-   celdaViewCell *cell = (celdaViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    celdaViewCell *cell = (celdaViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
     {
         cell = [[celdaViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         
     }
-
+    
     //NSLog(array[indexPath.row]);
-   //cell.lblCount.text=@"hola";
-   // cell.lblCount.text=[]array[indexPath.row];
+    //cell.lblCount.text=@"hola";
+    // cell.lblCount.text=[]array[indexPath.row];
     cell.lblCount.text = array[0][indexPath.row];
-   
-    return cell;
+    cell.lblDate.text=dateString;
+      return cell;
+    
 }
 /*
 #pragma mark - Navigation

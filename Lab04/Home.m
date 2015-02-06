@@ -8,7 +8,6 @@
 
 #import "Home.h"
 
-
 NSTimer *timer;
 @interface Home (){
 int countNum;
@@ -47,7 +46,7 @@ int countNum;
     if(countNum==11){
         [timer invalidate];
            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-          UIViewController *viewController = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:@"secondViewController"];
+          UIViewController *viewController = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:@"otroViewController"];
         
         [self presentViewController:viewController animated:YES completion:nil];
         

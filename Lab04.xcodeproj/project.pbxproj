@@ -14,7 +14,7 @@
 		FF26C5881A83DFCB00E42462 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF26C5871A83DFCB00E42462 /* Images.xcassets */; };
 		FF26C58B1A83DFCB00E42462 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF26C5891A83DFCB00E42462 /* LaunchScreen.xib */; };
 		FF26C5971A83DFCB00E42462 /* Lab04Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF26C5961A83DFCB00E42462 /* Lab04Tests.m */; };
-		FF26C5A21A83E2A100E42462 /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF26C5A11A83E2A100E42462 /* secondViewController.m */; };
+		FF55063A1A85461B00F70EB2 /* otroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5506391A85461B00F70EB2 /* otroViewController.m */; };
 		FFBF53F01A8524570040C5F5 /* celdaViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF53EF1A8524570040C5F5 /* celdaViewCell.m */; };
 		FFBF53F31A852C000040C5F5 /* global.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF53F21A852C000040C5F5 /* global.m */; };
 /* End PBXBuildFile section */
@@ -43,8 +43,8 @@
 		FF26C5901A83DFCB00E42462 /* Lab04Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lab04Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF26C5951A83DFCB00E42462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF26C5961A83DFCB00E42462 /* Lab04Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lab04Tests.m; sourceTree = "<group>"; };
-		FF26C5A01A83E2A100E42462 /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
-		FF26C5A11A83E2A100E42462 /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
+		FF5506381A85461B00F70EB2 /* otroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = otroViewController.h; sourceTree = "<group>"; };
+		FF5506391A85461B00F70EB2 /* otroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = otroViewController.m; sourceTree = "<group>"; };
 		FFBF53EE1A8524570040C5F5 /* celdaViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = celdaViewCell.h; sourceTree = "<group>"; };
 		FFBF53EF1A8524570040C5F5 /* celdaViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = celdaViewCell.m; sourceTree = "<group>"; };
 		FFBF53F11A852C000040C5F5 /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
@@ -100,10 +100,10 @@
 				FF26C5871A83DFCB00E42462 /* Images.xcassets */,
 				FF26C5891A83DFCB00E42462 /* LaunchScreen.xib */,
 				FF26C57A1A83DFCB00E42462 /* Supporting Files */,
-				FF26C5A01A83E2A100E42462 /* secondViewController.h */,
-				FF26C5A11A83E2A100E42462 /* secondViewController.m */,
 				FFBF53F11A852C000040C5F5 /* global.h */,
 				FFBF53F21A852C000040C5F5 /* global.m */,
+				FF5506381A85461B00F70EB2 /* otroViewController.h */,
+				FF5506391A85461B00F70EB2 /* otroViewController.m */,
 			);
 			path = Lab04;
 			sourceTree = "<group>";
@@ -234,7 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF26C5A21A83E2A100E42462 /* secondViewController.m in Sources */,
+				FF55063A1A85461B00F70EB2 /* otroViewController.m in Sources */,
 				FF26C5831A83DFCB00E42462 /* Home.m in Sources */,
 				FFBF53F31A852C000040C5F5 /* global.m in Sources */,
 				FF26C5801A83DFCB00E42462 /* AppDelegate.m in Sources */,
