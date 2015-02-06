@@ -51,11 +51,12 @@
                         <outlet property="dataLabel" destination="riX-Oa-q85" id="Cfe-FM-akb"/>
                         <outlet property="showLabel" destination="cyv-Du-evU" id="3rl-fb-n9O"/>
                         <outlet property="totalClick" destination="jUY-2N-aPD" id="mri-n2-W27"/>
+                        <segue destination="43n-Ns-mZ2" kind="presentation" identifier="toTable" id="Wf7-aA-93I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-117.5" y="242.5"/>
+            <point key="canvasLocation" x="-156.5" y="178.5"/>
         </scene>
         <!--Otro View Controller-->
         <scene sceneID="RqN-Ob-wFw">
@@ -75,7 +76,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" id="Sk1-oa-z3b"/>
+                                    <action selector="btnBackPressed:" destination="43n-Ns-mZ2" eventType="touchUpInside" id="pNM-hG-sgy"/>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="NeU-lu-HdK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number presses" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0R-I1-eUG">
@@ -135,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKG-5k-Mor" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="292.5" y="253.5"/>
+            <point key="canvasLocation" x="399.5" y="164.5"/>
         </scene>
     </scenes>
 </document>

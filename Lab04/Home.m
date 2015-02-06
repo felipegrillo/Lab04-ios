@@ -11,6 +11,7 @@
 NSTimer *timer;
 @interface Home (){
 int countNum;
+
 }
 @end
 
@@ -27,17 +28,23 @@ int countNum;
     [super viewDidLoad];
     countNum=0;
     countClick=0;
-    array=[[NSMutableArray alloc] init];
+    
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    array=[[NSMutableArray alloc] init];
+    countNum=0;
+    countClick=0;
+    timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(countTimer) userInfo:nil repeats:YES];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)viewDidAppear:(BOOL)animated{
-    timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(countTimer) userInfo:nil repeats:YES];
-}
+
 - (void)countTimer{
     //contador de timer
     countNum++;
@@ -45,11 +52,12 @@ int countNum;
     
     if(countNum==11){
         [timer invalidate];
-           UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        /*   UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
           UIViewController *viewController = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:@"otroViewController"];
         
         [self presentViewController:viewController animated:YES completion:nil];
-        
+        */
+        [self performSegueWithIdentifier:@"toTable" sender:self];
     }
     
 }

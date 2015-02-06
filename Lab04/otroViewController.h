@@ -10,5 +10,6 @@
 
 @interface otroViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tableview;
+- (IBAction)btnBackPressed:(id)sender;
 
 @end

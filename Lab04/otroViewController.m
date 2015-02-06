@@ -27,8 +27,11 @@ NSString *dateString;
     dateString = [dateFormatter stringFromDate:currentDate];
     
   ///  array=[[NSMutableArray alloc] addObjectsFromArray:<#(NSArray *)#>];
+    NSArray *arrays = [[NSArray alloc] initWithObjects:[[NSNumber numberWithInt:countClick ]stringValue],nil];
+ 
 
-    [array addObject:[[NSMutableArray alloc] initWithObjects:[[NSNumber numberWithInt:countClick ]stringValue],nil]];
+    [array addObjectsFromArray:arrays];
+   // [array addObject:[[NSMutableArray alloc] initWithObjects:[[NSNumber numberWithInt:countClick ]stringValue],nil]];
    // [array addObject:[[NSNumber numberWithInt:countClick ]stringValue]];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -63,10 +66,8 @@ NSString *dateString;
         
     }
     
-    //NSLog(array[indexPath.row]);
-    //cell.lblCount.text=@"hola";
-    // cell.lblCount.text=[]array[indexPath.row];
-    cell.lblCount.text = array[0][indexPath.row];
+
+    cell.lblCount.text = array[indexPath.row];
     cell.lblDate.text=dateString;
       return cell;
     
@@ -81,4 +82,13 @@ NSString *dateString;
 }
 */
 
+- (IBAction)btnBackPressed:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+//NSArray *arrays = [[NSArray alloc] initWithObjects:[[NSNumber numberWithInt:countClick ]stringValue],nil];
+//NSMutableArray array = [[NSMutableArray alloc] init];
+//[mutableArray addObject:@"ALL ITEMS"];
+//[array addObjectsFromArray:arrays];
 @end
