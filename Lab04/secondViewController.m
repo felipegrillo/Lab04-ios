@@ -7,15 +7,34 @@
 //
 
 #import "secondViewController.h"
+#import "celdaViewCell.h"
+#import "global.h"
+NSString *dateString;
 
 @interface secondViewController ()
 
 @end
 
 @implementation secondViewController
+          
+/*- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 0;
+}
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 0;
+}*/
 - (void)viewDidLoad {
+    NSDate *currentDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"dd.MM.YY HH:mm:ss"];
+    dateString = [dateFormatter stringFromDate:currentDate];
+    
     [super viewDidLoad];
+   // [array addObject:[[NSMutableArray alloc] initWithObjects:[[NSNumber numberWithInt:countClick ]stringValue],nil]];
+
+  //  [array addObject:[[NSMutableArray alloc] initWithObjects:@"uno",@"dos",nil]];
     // Do any additional setup after loading the view.
 }
 
@@ -24,6 +43,36 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return array.count;
+}
+//-------------------------------------------------------------------------------
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 64;
+}
+//-------------------------------------------------------------------------------
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"cellOaxaca");
+    static NSString *CellIdentifier = @"celda";
+    
+   celdaViewCell *cell = (celdaViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil)
+    {
+        cell = [[celdaViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        
+    }
+
+    //NSLog(array[indexPath.row]);
+   //cell.lblCount.text=@"hola";
+   // cell.lblCount.text=[]array[indexPath.row];
+    cell.lblCount.text = array[0][indexPath.row];
+    cell.lblDate.text=dateString;
+    return cell;
+}
 /*
 #pragma mark - Navigation
 

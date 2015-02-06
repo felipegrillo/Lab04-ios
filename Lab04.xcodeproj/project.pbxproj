@@ -15,6 +15,8 @@
 		FF26C58B1A83DFCB00E42462 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF26C5891A83DFCB00E42462 /* LaunchScreen.xib */; };
 		FF26C5971A83DFCB00E42462 /* Lab04Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF26C5961A83DFCB00E42462 /* Lab04Tests.m */; };
 		FF26C5A21A83E2A100E42462 /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF26C5A11A83E2A100E42462 /* secondViewController.m */; };
+		FFBF53F01A8524570040C5F5 /* celdaViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF53EF1A8524570040C5F5 /* celdaViewCell.m */; };
+		FFBF53F31A852C000040C5F5 /* global.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF53F21A852C000040C5F5 /* global.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		FF26C5961A83DFCB00E42462 /* Lab04Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lab04Tests.m; sourceTree = "<group>"; };
 		FF26C5A01A83E2A100E42462 /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
 		FF26C5A11A83E2A100E42462 /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
+		FFBF53EE1A8524570040C5F5 /* celdaViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = celdaViewCell.h; sourceTree = "<group>"; };
+		FFBF53EF1A8524570040C5F5 /* celdaViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = celdaViewCell.m; sourceTree = "<group>"; };
+		FFBF53F11A852C000040C5F5 /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		FFBF53F21A852C000040C5F5 /* global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = global.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,8 @@
 		FF26C56E1A83DFCB00E42462 = {
 			isa = PBXGroup;
 			children = (
+				FFBF53EE1A8524570040C5F5 /* celdaViewCell.h */,
+				FFBF53EF1A8524570040C5F5 /* celdaViewCell.m */,
 				FF26C5791A83DFCB00E42462 /* Lab04 */,
 				FF26C5931A83DFCB00E42462 /* Lab04Tests */,
 				FF26C5781A83DFCB00E42462 /* Products */,
@@ -94,6 +102,8 @@
 				FF26C57A1A83DFCB00E42462 /* Supporting Files */,
 				FF26C5A01A83E2A100E42462 /* secondViewController.h */,
 				FF26C5A11A83E2A100E42462 /* secondViewController.m */,
+				FFBF53F11A852C000040C5F5 /* global.h */,
+				FFBF53F21A852C000040C5F5 /* global.m */,
 			);
 			path = Lab04;
 			sourceTree = "<group>";
@@ -226,8 +236,10 @@
 			files = (
 				FF26C5A21A83E2A100E42462 /* secondViewController.m in Sources */,
 				FF26C5831A83DFCB00E42462 /* Home.m in Sources */,
+				FFBF53F31A852C000040C5F5 /* global.m in Sources */,
 				FF26C5801A83DFCB00E42462 /* AppDelegate.m in Sources */,
 				FF26C57D1A83DFCB00E42462 /* main.m in Sources */,
+				FFBF53F01A8524570040C5F5 /* celdaViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +430,7 @@
 				FF26C59C1A83DFCB00E42462 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF26C59D1A83DFCB00E42462 /* Build configuration list for PBXNativeTarget "Lab04Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +439,7 @@
 				FF26C59F1A83DFCB00E42462 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

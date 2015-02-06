@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface secondViewController : UIViewController
+@interface secondViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic,retain) NSMutableArray *tableData;
+@property (strong, nonatomic) IBOutlet UILabel *lbName;
 
 @end

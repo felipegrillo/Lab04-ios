@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface Home : UIViewController
+#import "global.h"
+@interface Home : UIViewController <UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UILabel *showLabel;
 @property (strong, nonatomic) IBOutlet UILabel *totalClick;
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
+
+
 - (IBAction)ClickMe:(id)sender;
 
 @end

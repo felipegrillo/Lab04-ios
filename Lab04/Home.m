@@ -7,7 +7,8 @@
 //
 
 #import "Home.h"
-int countClick;
+
+
 NSTimer *timer;
 @interface Home (){
 int countNum;
@@ -16,10 +17,18 @@ int countNum;
 
 @implementation Home
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 0;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 0;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     countNum=0;
     countClick=0;
+    array=[[NSMutableArray alloc] init];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -40,7 +49,7 @@ int countNum;
            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
           UIViewController *viewController = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:@"secondViewController"];
         
-         [self presentViewController:viewController animated:YES completion:nil];
+        [self presentViewController:viewController animated:YES completion:nil];
         
     }
     
