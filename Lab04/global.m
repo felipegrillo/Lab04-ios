@@ -10,4 +10,7 @@
 
 @implementation global
 
+- (void) array{
+    array = [[NSMutableArray alloc] init];
+}
 @end

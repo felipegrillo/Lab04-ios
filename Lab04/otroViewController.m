@@ -15,13 +15,21 @@ NSString *dateString;
 @end
 
 @implementation otroViewController
+- (void)inicializo{
+  //  array=[[NSMutableArray alloc] init];
+    NSLog(@"hola");
+}
 
 - (void)viewDidLoad {
     NSDate *currentDate = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     [dateFormatter setDateFormat:@"dd.MM.YY HH:mm:ss"];
     dateString = [dateFormatter stringFromDate:currentDate];
+    
+  ///  array=[[NSMutableArray alloc] addObjectsFromArray:<#(NSArray *)#>];
+
     [array addObject:[[NSMutableArray alloc] initWithObjects:[[NSNumber numberWithInt:countClick ]stringValue],nil]];
+   // [array addObject:[[NSNumber numberWithInt:countClick ]stringValue]];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
